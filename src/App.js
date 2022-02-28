@@ -15,8 +15,8 @@ export default function Router() {
   return <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}/>
-      <Route path="/resources" element={<div>Hello WOrld!</div>}/>
-      <Route path="/statistics" element={<div>Hello WOrld!</div>}/>
+      <Route path="/resources" element={<Resources />}/>
+      <Route path="/statistics" element={<Statistics />}/>
       <Route path="/:home" element={<App />}/>
     </Routes>
   </BrowserRouter>;
@@ -51,3 +51,20 @@ function App() {
   );
 }
 
+function Statistics() {
+  return(
+    <div className="App">
+      hello world! This is another page
+    </div>
+  );
+
+}
+
+function Resources() {
+  return (
+    <div className="App">
+      hello world! This is another page
+    </div>
+  );
+
+}
