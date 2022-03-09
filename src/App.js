@@ -95,15 +95,25 @@ function Statistics() {
           display: 'flex',
           flexWrap: 'wrap',
           '& > :not(style)': {
-            m: 1,
-            width: 128,
-            height: 128,
+            m: 3,
+            width: 200,
+            height: 200,
         },
       }}>
-          <Paper elevation={4}>This is a test</Paper>
-          <Paper elevation={4}>This is a test</Paper>
-          <Paper elevation={4}>This is a test</Paper>
-          <Paper elevation={4}>This is a test</Paper>
+          <Paper elevation={4}>Major depressive episodes increased from 10 percent-13.6
+            percent in AAPI youth ages 12-17,
+            8.9 percent to 10.1 percent in young adults 18-25,
+            and 3.2 percent to 5 percent in the 26-49 age range between 2015 and 2018.</Paper>
+          <Paper elevation={4}>Asian-American women fear stigma for themselves,
+            but more so for their families</Paper>
+          <Paper elevation={4}>Asian-American women witness depression in their families,
+            but have learned from their Asian cultures to maintain silence on the subject</Paper>
+          <Paper elevation={4}>AAPIs adults are the racial group least likely to seek mental health services
+            - 3 times less likely than their white counterparts</Paper>
+          <Paper elevation={4}>Conflicting cultural values are impacting Asian-American
+            women's sense of control over their life decisions</Paper>
+          <Paper elevation={4}>Of AAPI adults with a mental illness,
+            73.1 percent did not receive treatment compared to 56.7 percent of the overall population</Paper>
         </Box>
       </div>
 
@@ -152,18 +162,17 @@ function Resources() {
         </div>
 
         <div className='sexed-resources'>
-        <span>Mental Health Resources for Asian Americans</span>
+        <span>Sex Education Resources for Asian Americans</span>
           <List component="nav" aria-label="mailbox folders">
             <ListItem button>
-              <a href='https://aahiinfo.org/aahi-resources/' target="_blank" rel="noreferrer">Asian American Health Intiative</a>
+              <a href='https://www.asianamfeminism.org/' target="_blank" rel="noreferrer">Asian American Feminist Collective</a>
             </ListItem>
             <Divider />
             <ListItem button divider>
-              <a href='https://www.imreadymovement.org/' target="_blank" rel="noreferrer">Asian American +Pacific
-              Islander Women Lead(AAPI)</a>
+              <a href='https://open.spotify.com/show/2jIHZbDsOQaW0HGeiu7Ulr' target="_blank" rel="noreferrer">Six Minute Sex Ed Podcast</a>
             </ListItem>
             <ListItem button >
-              <a href='https://aapaonline.org/' target="_blank" rel="noreferrer">Asian American Psychological Association AAPA</a>
+              <a href='https://www.instagram.com/nicole_thesexprofessor/?hl=en' target="_blank" rel="noreferrer">Nicole McNichols PH.D</a>
             </ListItem>
             <Divider light />
             <ListItem button divider>
@@ -175,7 +184,9 @@ function Resources() {
             </ListItem>
             <ListItem button divider>
             <Divider light />
-              <a href='https://www.asianmhc.org/' target="_blank" rel="noreferrer">Asian Mental Health Collective</a>
+              <a href='https://weareaptn.org/resource/what-they-dont-tell-you-in-sex-ed-a-resource-for-transgender-
+              and-gender-diverse-communities-on-sexual-and-reproductive-health/' target="_blank"
+              rel="noreferrer">Asia Pacific Transgender Network</a>
             </ListItem>
           </List>
         </div>
