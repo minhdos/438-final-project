@@ -16,10 +16,10 @@ import {
   Routes,
   Route,
   Link,
-  Redirect,
 } from "react-router-dom";
 import { AppBar } from '@mui/material';
 
+// setting pages up
 export default function Router() {
   return <BrowserRouter>
     <Routes>
@@ -28,11 +28,12 @@ export default function Router() {
       <Route path="/statistics" element={<Statistics />}/>
       <Route path="/:home" element={<Home />}/>
       <Route path="/CommunityMentalHealth" element={<CommunityMentalHealth/>}/>
+      <Route path="/communityPost" element={<communityPost/>}/>
     </Routes>
   </BrowserRouter>;
 }
 
-
+// this is the home page for all
 function Home() {
   return (
     <div className="App">
@@ -60,7 +61,7 @@ function Home() {
   );
 }
 
-
+//goes to the mental health community section
 function CommunityMentalHealth () {
   return (
     <div className='App'>
@@ -71,7 +72,9 @@ function CommunityMentalHealth () {
       </div>
 
       <div className='health-groups'>
-        <Button variant="contained" >Anxiety</Button>
+       <Link to="/communityPost">
+          <Button variant="contained" >Anxiety</Button>
+        </Link>
         <Button variant="contained">Depression</Button>
         <Button variant="contained" >Eating Disorder</Button>
         <Button variant="contained">PTSD</Button>
@@ -81,6 +84,22 @@ function CommunityMentalHealth () {
   );
 }
 
+// goes into a page that has a bunch of community posts
+function communityPost() {
+  return (
+    <div className='App'>
+      <div className="navBar">
+        <Link to="/statistics">Statistics</Link>
+        <Link to="/">Communities</Link>
+        <Link to="/resources">Resources</Link>
+      </div>
+
+      a bunch of posts :)
+    </div>
+  );
+}
+
+// this provides stats surrounding asian americans
 function Statistics() {
   return(
     <div className="App">
@@ -122,6 +141,8 @@ function Statistics() {
 
 }
 
+// provides a bunch of mental health and sex ed resources for asian
+// amerians
 function Resources() {
   return (
     <div className="App">
